@@ -1,0 +1,5 @@
+---
+- name: Generate CA certificates
+  hosts: all
+  roles:
+    - angelesphillips.certs.ca-certs
