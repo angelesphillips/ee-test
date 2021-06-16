@@ -1,0 +1,7 @@
+---
+- name: Test banner role from angelesphillips.motd collection
+  hosts: all
+  collections:
+    - angelesphillips.motd
+  roles:
+    - name: angelesphillips.motd.banner
