@@ -1,0 +1,16 @@
+---
+- name: Ping targeted machines
+  hosts: all
+  remote_user: devops
+  tasks:
+    - name: Run the ping module
+      ping:
+
+    - name: Create /root/test
+      become: True
+      copy:
+        content: DevOps!
+        dest: /root/test
+        owner: root
+        group: root
+        mode: '0644'
